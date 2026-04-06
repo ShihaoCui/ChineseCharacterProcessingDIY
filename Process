@@ -9,9 +9,10 @@ print("前5行数据：")
 print(df.head())
 print("列数：", df.shape[1])
 
-if df.shape[1] == 3500:
+if df.shape[1] == 7:
     df.columns = ["排名", "汉字", "频次", "占比1", "占比2", "拼音", "释义"]
 
 df.to_excel(excel_file, index=False)
 
 print(f"转换完成：{excel_file}")
+
